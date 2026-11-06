@@ -1,11 +1,11 @@
 #include <Arduino.h>
 
-#define DAC_PIN 25
+#define DAC_PIN 26
 
 void setup()
 {
     Serial.begin(115200);
-    Serial.println("ESP32 DAC LED Test");
+    Serial.println("ESP32 DAC2 LED Test");
 }
 
 void loop()
@@ -16,7 +16,7 @@ void loop()
     {
         dacWrite(DAC_PIN, values[i]);
 
-        Serial.print("DAC Value: ");
+        Serial.print("DAC2 Value: ");
         Serial.println(values[i]);
 
         delay(2000);
